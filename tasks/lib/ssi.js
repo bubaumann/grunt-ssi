@@ -178,7 +178,7 @@ module.exports = function(logger) {
 
   	var encode = encoding ? encoding : this.settings.encoding;
 
-  	fs.writeFileSync(filePath, data, {endcoding: encode});
+  	fs.writeFileSync(filePath, data, encode);
 
   };
 
